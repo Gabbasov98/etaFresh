@@ -320,13 +320,13 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="blog-card">
-                                            <a href="#" class="blog-card__img _scale-img m-backdrop">
+                                        <a href="#" class="blog-card">
+                                            <div class="blog-card__img _scale-img m-backdrop">
                                                 <img srcset="img/blog_2x.jpg 2x" src="img/blog.jpg" />
-                                            </a>
+                                            </div>
                                             <div class="blog-card__content">
                                                 <div class="blog-card__title bold-text dark-gray-text">
-                                                    <a href="">Филлеры: что это такое и кому это нужно?</a>
+                                                    Филлеры: что это такое и кому это нужно?
                                                 </div>
                                                 <div class="blog-card__desc text16">
                                                     Термин «филлеры» у многих людей вызывает перед глазами картинку раздутых губ и выпуклых...
@@ -336,17 +336,17 @@
                                                 <div class="blog-card__item"><span>5 июля 2023 </span></div>
                                                 <div class="blog-card__item"><span>Статьи</span></div>
                                             </div>
-                                        </div>
+                                        </a>
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="blog-card">
-                                            <a href="#" class="blog-card__img _scale-img m-backdrop">
+                                        <a href="#" class="blog-card">
+                                            <div class="blog-card__img _scale-img m-backdrop">
                                                 <img srcset="img/blog2_2x.jpg 2x" src="img/blog2.jpg" />
-                                            </a>
+                                            </div>
                                             <div class="blog-card__content">
                                                 <div class="blog-card__title bold-text dark-gray-text">
-                                                    <a href="">Парабены в косметике: что это такое</a>
+                                                    Парабены в косметике: что это такое
                                                 </div>
                                                 <div class="blog-card__desc text16">
                                                     Вред парабенов в составе косметики — недоказанная гипотеза, которая порождает массу споров и точек...
@@ -356,17 +356,17 @@
                                                 <div class="blog-card__item"><span>1 июля 2023 </span></div>
                                                 <div class="blog-card__item"><span>Новости</span></div>
                                             </div>
-                                        </div>
+                                        </a>
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="blog-card">
-                                            <a href="#" class="blog-card__img _scale-img m-backdrop">
+                                        <a href="#" class="blog-card">
+                                            <div class="blog-card__img _scale-img m-backdrop">
                                                 <img srcset="img/blog3_2x.jpg 2x" src="img/blog3.jpg" />
-                                            </a>
+                                            </div>
                                             <div class="blog-card__content">
                                                 <div class="blog-card__title bold-text dark-gray-text">
-                                                    <a href="">Отвоевать несколько лет молодости возможно!</a>
+                                                    Отвоевать несколько лет молодости возможно!
                                                 </div>
                                                 <div class="blog-card__desc text16">
                                                     Красота — понятие субъективное. Кому-то нравятся худышки, кому-то девушки более пышные.
@@ -376,17 +376,17 @@
                                                 <div class="blog-card__item"><span>24 июня 2023 </span></div>
                                                 <div class="blog-card__item"><span>Статьи</span></div>
                                             </div>
-                                        </div>
+                                        </a>
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="blog-card">
-                                            <a href="#" class="blog-card__img _scale-img m-backdrop">
+                                        <a href="#" class="blog-card">
+                                            <div class="blog-card__img _scale-img m-backdrop">
                                                 <img srcset="img/blog4_2x.jpg 2x" src="img/blog4.jpg" />
-                                            </a>
+                                            </div>
                                             <div class="blog-card__content">
                                                 <div class="blog-card__title bold-text dark-gray-text">
-                                                    <a href="">Частный случай «Выравнивание блонда»</a>
+                                                    Частный случай «Выравнивание блонда»
                                                 </div>
                                                 <div class="blog-card__desc text16">
                                                     Большинство наших постоянных клиенток и приходящих впервые комфортно себя чувствуют в блонде.
@@ -396,7 +396,7 @@
                                                 <div class="blog-card__item"><span>15 мая 2023 </span></div>
                                                 <div class="blog-card__item"><span>Статьи</span></div>
                                             </div>
-                                        </div>
+                                        </a>
 
                                     </div>
                                 </div>
@@ -844,7 +844,7 @@
         </div>
     </div>
 
-    <div class="modal" id="reviewModal">
+    <div class="modal _active2" id="reviewModal">
         <div class="modal__bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="modal__inner">
@@ -857,34 +857,34 @@
                     </div>
                 </div>
 
-                <form action="" class="modal-form">
-                    <fieldset class="fg _full">
-                        <input type="text" class="_required">
+                <form action="" class="modal-form _review-form">
+                    <div class="fg _full">
+                        <input type="text" name="name" class="_field _required">
                         <label>Имя и Фамилия</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="tel" class="_error">
+                        <div class="fg__text"></div>
+                    </div>
+                    <div class="fg">
+                        <input type="tel" name="phone" class="_field _error2">
                         <label>Телефон</label>
-                        <div class="fg__text">
-                            Проверьте телефон
-                        </div>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text" class="_required _success">
+                    </div>
+                    <div class="fg">
+                        <input type="email" name="email" class="_field _required _success2">
                         <label>Почта</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text">
+                        <div class="fg__text"></div>
+                    </div>
+                    <div class="fg">
+                        <input type="text" name="like" class="_field">
                         <label>Понравилось</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <input type="text" name="unlike" class="_field">
                         <label>Не понравилось</label>
-                    </fieldset>
-                    <fieldset class="fg _full">
-                        <textarea class="_required"></textarea>
+                    </div>
+                    <div class="fg _full">
+                        <textarea name="impression" class="_field _required"></textarea>
                         <label>Ваши впечатления</label>
-                    </fieldset>
+                        <div class="fg__text"></div>
+                    </div>
                     <div class="file-input _full">
                         <div class="file-input__wrap">
                             <div class="custom-file-container" data-upload-id="file-input"></div>
@@ -892,7 +892,7 @@
                     </div>
 
                     <div class="modal-form__bottom _full">
-                        <button class="m-btn m-btn-brown">
+                        <button type="button" class="_review-submit m-btn m-btn-brown">
                             <span>Оставить отзыв</span>
                         </button>
                         <div class="modal-form__conf">
@@ -925,77 +925,6 @@
     <div class="modal" id="reviewModal2">
         <div class="modal__bg _close-modal"></div>
         <div class="modal__dialog _success">
-            <div class="modal__inner">
-                <div class="modal__top">
-                    <div class="modal__title">
-                        Оставить отзыв
-                    </div>
-                    <div class="modal__desc">
-                        Поделитесь своими впечатлениями
-                    </div>
-                </div>
-
-                <form action="" class="modal-form">
-                    <fieldset class="fg _full">
-                        <input type="text" class="_required">
-                        <label>Имя и Фамилия</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="tel" class="_error">
-                        <label>Телефон</label>
-                        <div class="fg__text">
-                            Проверьте телефон
-                        </div>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text" class="_required _success">
-                        <label>Почта</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text">
-                        <label>Понравилось</label>
-                    </fieldset>
-                    <fieldset class="fg">
-                        <input type="text">
-                        <label>Не понравилось</label>
-                    </fieldset>
-                    <fieldset class="fg _full">
-                        <textarea class="_required"></textarea>
-                        <label>Ваши впечатления</label>
-                    </fieldset>
-                    <div class="file-input _full">
-                        <div class="file-input__wrap">
-                            <div class="custom-file-container" data-upload-id="file-input"></div>
-                        </div>
-                    </div>
-
-                    <div class="modal-form__bottom _full">
-                        <button class="m-btn m-btn-brown">
-                            <span>Оставить отзыв</span>
-                        </button>
-                        <div class="modal-form__conf">
-                            Отправляя свои данные, вы даёте согласие на <a href="">обработку персональных данных</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="thank">
-                <div class="thank__inner">
-                    <div class="thank__icon"></div>
-                    <div class="thank__title">
-                        Спасибо!
-                    </div>
-                    <div class="thank__desc">
-                        Отзыв будет размещен после проверки модератором
-                    </div>
-                </div>
-            </div>
-            <button class="modal__close _close-modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 4.5L19.5 19.5" stroke="#58585D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M19.5 4.5L4.5 19.5" stroke="#58585D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
 
         </div>
     </div>
